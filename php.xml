@@ -216,7 +216,7 @@
             <configuration_option name="report_zend_debug" value="0" />
             <configuration_option name="request_order" value="GP" />
             <configuration_option name="sendmail_from" value="" />
-            <configuration_option name="sendmail_path" value="/usr/bin/env /Users/jcnventura/.rbenv/shims/catchmail -f test@local.dev" />
+            <configuration_option name="sendmail_path" value="/usr/bin/env $USER_HOME$/.rbenv/shims/catchmail -f test@local.dev" />
             <configuration_option name="serialize_precision" value="17" />
             <configuration_option name="session.auto_start" value="0" />
             <configuration_option name="session.cache_expire" value="180" />
