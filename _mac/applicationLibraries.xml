@@ -1,33 +1,18 @@
 <application>
   <component name="libraryTable">
     <library name="adsbygoogle" type="javaScript">
-      <properties>
-        <sourceFilesUrls>
-          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__pagead2.googlesyndication.com_pagead_js_adsbygoogle.js" />
-        </sourceFilesUrls>
-      </properties>
       <CLASSES>
         <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__pagead2.googlesyndication.com_pagead_js_adsbygoogle.js" />
       </CLASSES>
       <SOURCES />
     </library>
     <library name="show_ads" type="javaScript">
-      <properties>
-        <sourceFilesUrls>
-          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__pagead2.googlesyndication.com_pagead_show_ads.js" />
-        </sourceFilesUrls>
-      </properties>
       <CLASSES>
         <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__pagead2.googlesyndication.com_pagead_show_ads.js" />
       </CLASSES>
       <SOURCES />
     </library>
     <library name="show_afs_search" type="javaScript">
-      <properties>
-        <sourceFilesUrls>
-          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_www.google.com_afsonline_show_afs_search.js" />
-        </sourceFilesUrls>
-      </properties>
       <CLASSES>
         <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_www.google.com_afsonline_show_afs_search.js" />
       </CLASSES>
