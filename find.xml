@@ -1,8 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="localCaseSensitive" value="true" />
+    <option name="customScope" value="Directory '.../web/themes/custom/tombo_bootstrap - [tombo_pt8]'" />
+    <option name="defaultScopeName" value="Directory '.../web/themes/custom/tombo_bootstrap - [tombo_pt8]'" />
     <option name="wholeWordsOnly" value="true" />
-    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="Directory '.../web/themes/custom/tombo_bootstrap - [tombo_pt8]'" />
   </component>
 </application>
