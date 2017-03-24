@@ -17,7 +17,7 @@
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php56/5.6.21/bin/php-cgi" php_cli="/usr/local/Cellar/php56/5.6.21/bin/php" path_separator=":" remote_host="127.0.0.1" version="5.6.21">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php56/5.6.29_5/bin/php-cgi" php_cli="/usr/local/Cellar/php56/5.6.29_5/bin/php" path_separator=":" version="5.6.29">
           <additional_php_ini>/usr/local/etc/php/5.6/conf.d/ext-igbinary.ini, /usr/local/etc/php/5.6/conf.d/ext-mcrypt.ini, /usr/local/etc/php/5.6/conf.d/ext-opcache.ini, /usr/local/etc/php/5.6/conf.d/ext-redis.ini, /usr/local/etc/php/5.6/conf.d/ext-uploadprogress.ini, /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/5.6/php.ini</configuration_file>
           <configuration_options>
@@ -72,7 +72,7 @@
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
             <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
-            <configuration_option name="extension_dir" value="/usr/local/Cellar/php56/5.6.21/lib/php/extensions/no-debug-non-zts-20131226" />
+            <configuration_option name="extension_dir" value="/usr/local/Cellar/php56/5.6.29_5/lib/php/extensions/no-debug-non-zts-20131226" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
@@ -92,7 +92,7 @@
             <configuration_option name="ignore_repeated_source" value="" />
             <configuration_option name="ignore_user_abort" value="0" />
             <configuration_option name="implicit_flush" value="1" />
-            <configuration_option name="include_path" value=".:" />
+            <configuration_option name="include_path" value=".:/usr/local/Cellar/php56/5.6.29_5/lib/php" />
             <configuration_option name="input_encoding" value="" />
             <configuration_option name="internal_encoding" value="" />
             <configuration_option name="ldap.max_links" value="-1" />
@@ -188,6 +188,8 @@
             <configuration_option name="opcache.revalidate_path" value="0" />
             <configuration_option name="opcache.save_comments" value="1" />
             <configuration_option name="opcache.use_cwd" value="1" />
+            <configuration_option name="opcache.validate_permission" value="0" />
+            <configuration_option name="opcache.validate_root" value="0" />
             <configuration_option name="opcache.validate_timestamps" value="1" />
             <configuration_option name="open_basedir" value="" />
             <configuration_option name="openssl.cafile" value="" />
@@ -211,12 +213,15 @@
             <configuration_option name="redis.arrays.index" value="" />
             <configuration_option name="redis.arrays.names" value="" />
             <configuration_option name="redis.arrays.previous" value="" />
+            <configuration_option name="redis.clusters.read_timeout" value="" />
+            <configuration_option name="redis.clusters.seeds" value="" />
+            <configuration_option name="redis.clusters.timeout" value="" />
             <configuration_option name="register_argc_argv" value="1" />
             <configuration_option name="report_memleaks" value="1" />
             <configuration_option name="report_zend_debug" value="0" />
             <configuration_option name="request_order" value="GP" />
             <configuration_option name="sendmail_from" value="" />
-            <configuration_option name="sendmail_path" value="/usr/bin/env $USER_HOME$/.rbenv/shims/catchmail -f test@local.dev" />
+            <configuration_option name="sendmail_path" value="/usr/local/bin/catchmail -f test@local.dev" />
             <configuration_option name="serialize_precision" value="17" />
             <configuration_option name="session.auto_start" value="0" />
             <configuration_option name="session.cache_expire" value="180" />
@@ -302,7 +307,7 @@
             <configuration_option name="xdebug.overload_var_dump" value="2" />
             <configuration_option name="xdebug.profiler_aggregate" value="0" />
             <configuration_option name="xdebug.profiler_append" value="0" />
-            <configuration_option name="xdebug.profiler_enable" value="0" />
+            <configuration_option name="xdebug.profiler_enable" value="1" />
             <configuration_option name="xdebug.profiler_enable_trigger" value="0" />
             <configuration_option name="xdebug.profiler_enable_trigger_value" value="" />
             <configuration_option name="xdebug.profiler_output_dir" value="/var/tmp/" />
@@ -313,7 +318,7 @@
             <configuration_option name="xdebug.remote_cookie_expire_time" value="3600" />
             <configuration_option name="xdebug.remote_enable" value="0" />
             <configuration_option name="xdebug.remote_handler" value="dbgp" />
-            <configuration_option name="xdebug.remote_host" value="localhost" />
+            <configuration_option name="xdebug.remote_host" value="127.0.0.1" />
             <configuration_option name="xdebug.remote_log" value="" />
             <configuration_option name="xdebug.remote_mode" value="req" />
             <configuration_option name="xdebug.remote_port" value="9000" />
@@ -344,7 +349,7 @@
             <configuration_option name="zlib.output_handler" value="" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.4.0">
+            <debugger_info debugger="xdebug" debugger_version="2.5.1">
               <debug_extensions />
             </debugger_info>
           </debuggers>
@@ -375,6 +380,7 @@
             <extension name="hash" />
             <extension name="iconv" />
             <extension name="igbinary" />
+            <extension name="jsmin" />
             <extension name="json" />
             <extension name="ldap" />
             <extension name="libxml" />
